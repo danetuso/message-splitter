@@ -10,8 +10,10 @@
     <h1>Message Splitter</h1>
     <div class="container">
         <textarea id="inputText" placeholder="Paste your document here"></textarea>
-        <input type="number" id="charLimit" placeholder="Character limit per message" />
-        <button onclick="splitText()">Split Text</button>
+        <div class="input-group">
+            <input type="number" id="charLimit" placeholder="Character limit per message" />
+            <button onclick="splitText()">Split</button>
+        </div>
         <div id="output"></div>
     </div>
     <script src="script.js"></script>
