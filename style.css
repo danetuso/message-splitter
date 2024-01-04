@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    color: #333; /* Dark grey color for text for readability */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    max-width: 800px; /* Maximum width for better readability on wider screens */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+textarea, input[type="number"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+textarea {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    height: 200px; /* Set your desired height here */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+
+button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover for interaction feedback */
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #003580; /* Even darker blue when button is clicked */
+}
+
+.snippet-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #e9ecef; /* Light background for snippet containers */
+    border-radius: 4px;
+}
+
+.counter {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #6c757d; /* Muted color for the counter to differentiate from the text */
+}
+
+.snippet-text {
+    flex-grow: 1; /* Text takes up remaining space */
+    padding: 0 10px; /* Padding between text and button */
+}
+
+button.copy-button {
+    background-color: #004896; /* Green background for 'Copy' button */
+}
+
+button.copy-button.copied {
+    background-color: #4CAF50; /* Different shade of green for visual feedback */
+}
