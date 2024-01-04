@@ -21,23 +21,25 @@ h1 {
     padding-bottom: 20px; /* Add padding at the bottom */
 }
 
-textarea, input[type="number"] {
-    width: calc(100% - 22px); /* Full width minus padding and border */
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 4px; /* Slightly rounded corners */
-    box-sizing: border-box; /* Include padding and border in width */
-}
-
+/* Textarea styles */
 textarea {
-    width: calc(100% - 22px); /* Adjust width to match */
+    width: 100%; /* Take full width of the container */
     height: 200px; /* Set your desired height here */
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 4px; /* Slightly rounded corners */
-    box-sizing: border-box; /* Include padding and border in width */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: -1px; /* Adjust for border */
+}
+
+/* Input type number styles */
+input[type="number"] {
+    width: calc(100% - 92px); /* Adjust width based on the button width */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px; /* Space between the input box and the button */
 }
 
 
@@ -82,6 +84,7 @@ button:active {
     flex-grow: 1;
     margin-right: 10px; /* Adjust spacing */
     padding: 0 10px; /* Padding between text and button */
+    text-align: left; /* Left-align the text */
 }
 
 button.copy-button {
@@ -102,5 +105,6 @@ button.copy-button.copied {
 
 .input-group button {
     width: auto; /* Adjust width for button to be content-based */
+    padding: 10px 30px; /* Increase padding to make the button wider */
     margin-left: 10px; /* Space between the input box and the button */
 }
