@@ -10,7 +10,6 @@ function splitText() {
     const outputContainer = document.getElementById('output');
     outputContainer.innerHTML = ''; // Clear previous output
     let startIndex = 0;
-    let counter = 1;
 
     while (startIndex < text.length) {
         let endIndex = Math.min(startIndex + charLimit, text.length);
@@ -33,18 +32,13 @@ function splitText() {
             startIndex = endIndex;
         }
 
-        createSnippetElement(snippet, counter++, outputContainer);
+        createSnippetElement(snippet, outputContainer);
     }
 }
 
-function createSnippetElement(snippet, counter, outputContainer) {
+function createSnippetElement(snippet, outputContainer) {
     let snippetDiv = document.createElement('div');
     snippetDiv.classList.add('snippet-container');
-
-    let counterSpan = document.createElement('span');
-    counterSpan.innerText = counter + ': ';
-    counterSpan.classList.add('counter');
-    snippetDiv.appendChild(counterSpan);
 
     let snippetText = document.createElement('span');
     snippetText.innerText = snippet;

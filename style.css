@@ -18,6 +18,7 @@ h1 {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border-radius: 8px; /* Rounded corners for a modern look */
+    padding-bottom: 20px; /* Add padding at the bottom */
 }
 
 textarea, input[type="number"] {
@@ -30,7 +31,7 @@ textarea, input[type="number"] {
 }
 
 textarea {
-    width: calc(100% - 22px); /* Full width minus padding and border */
+    width: calc(100% - 22px); /* Adjust width to match */
     height: 200px; /* Set your desired height here */
     padding: 10px;
     margin-top: 10px;
@@ -68,6 +69,7 @@ button:active {
     padding: 10px;
     background: #e9ecef; /* Light background for snippet containers */
     border-radius: 4px;
+    width: calc(100% - 22px); /* Match width with input boxes */
 }
 
 .counter {
@@ -77,14 +79,28 @@ button:active {
 }
 
 .snippet-text {
-    flex-grow: 1; /* Text takes up remaining space */
+    flex-grow: 1;
+    margin-right: 10px; /* Adjust spacing */
     padding: 0 10px; /* Padding between text and button */
 }
 
 button.copy-button {
     background-color: #004896; /* Green background for 'Copy' button */
+    margin-top: 0;
 }
 
 button.copy-button.copied {
     background-color: #4CAF50; /* Different shade of green for visual feedback */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Space between input box and bottom components */
+}
+
+.input-group button {
+    width: auto; /* Adjust width for button to be content-based */
+    margin-left: 10px; /* Space between the input box and the button */
 }
