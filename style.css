@@ -23,7 +23,7 @@ h1 {
 
 /* Textarea styles */
 textarea {
-    width: 100%; /* Take full width of the container */
+    width: calc(100% - 22px); /* Adjust width based on the button width */
     height: 200px; /* Set your desired height here */
     padding: 10px;
     margin-top: 10px;
@@ -34,7 +34,7 @@ textarea {
 
 /* Input type number styles */
 input[type="number"] {
-    width: calc(100% - 92px); /* Adjust width based on the button width */
+    width: calc(100% - 22px); /* Adjust width based on the button width */
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ddd;
@@ -72,12 +72,6 @@ button:active {
     background: #e9ecef; /* Light background for snippet containers */
     border-radius: 4px;
     width: calc(100% - 22px); /* Match width with input boxes */
-}
-
-.counter {
-    font-weight: bold;
-    margin-right: 5px;
-    color: #6c757d; /* Muted color for the counter to differentiate from the text */
 }
 
 .snippet-text {
